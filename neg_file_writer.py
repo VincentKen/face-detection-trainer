@@ -1,8 +1,8 @@
 import os
 import cv2
 
-txt = open("pos.txt", "w+")
-files = os.listdir("neg")
+txt = open("neg.txt", "w+")
+files = os.listdir("b")
 for file in files:
-    if os.path.isfile("neg/" + file):
-        txt.writelines("neg/" + file + "\n")
+    if os.path.isfile("bg/" + file):
+        txt.writelines("bg/" + file + "\n")
